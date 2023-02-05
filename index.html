@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerChat - Realtime Node Socket.io chat App</title>
+    <link rel="icon" href="img/chat.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+</head>
+
+<body>
+    <section class="chat_section">
+        <nav class="brand">
+            <img class="logo" src="img/chat.png" alt="">
+            <h1>HackerChat</h1>
+            <button type="button" class="menu" onclick="show_hide()">
+                <img src="img/menu.png" width="50px">
+            </button>
+        </nav>
+    </section>
+    <section>
+        <div class="container1">
+            <div class="users-window">
+                <div class="users-head">
+                    <h3>People</h3>
+                    <h4 class="users-count">0</h4>
+                </div>
+                <div class="users-list">
+                </div>
+            </div>
+            <div class="container">
+                <div class="chats">
+                    <!-- <div class="user-join">
+                        <p><b>Jarvis</b> joined the chat</p>
+                    </div> -->
+                    <!-- <div class="message right p">Hacker: Hey how are you?</div>
+                    <div class="message left p">Bot: I am fine.</div> -->
+                </div>
+                <div class="user-input">
+                    <textarea id="textarea "class="user-msg" cols="30" rows="1" placeholder="Write a message..."></textarea>
+                    <button id="user-send" type="button">SEND</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    var uwindow = document.querySelector('.users-window');
+    function show_hide(){
+        if(uwindow.style.display=='block'){
+            uwindow.style.display='none';
+        }
+        else{
+            uwindow.style.display='block';
+        }
+    }
+</script>
+</html>
