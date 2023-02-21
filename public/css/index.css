@@ -29,21 +29,21 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
+/* .container { */
     /* border: 2px solid black; */
-    height: 82vh;
+    /* height: 82vh;
     padding: 16px;
     flex-direction: column;
     display: flex;
     padding-top: 40px;
-    box-shadow: 0 1px 1px 3px black;
-    background: rgb(39, 38, 38);
-}
+
+    background: rgb(39, 38, 38); */
+/* } */
 
 div.users-window {
     width: 350px;
     color: white;
-    background-color: rgb(34, 32, 32);
+    background-color: rgb(1 9 50);
     padding: 15px 20px;
     border-radius: 10px;
     margin-right: 20px;
@@ -55,11 +55,13 @@ div.users-head {
     justify-content: space-between;
     display: flex;
     margin-bottom: 15px;
-    background-color: #444;
-    padding: 0 8px;
-    border-radius: 50px;
 }
 
+div.users-head h4{
+    background-color: #444;
+    padding: 3px 8px;
+    border-radius: 50px;
+}
 div.users-list p {
     font-size: 0.9rem;
     letter-spacing: 0.5px;
@@ -70,11 +72,12 @@ div.users-list p {
 div.container {
     width: 100%;
     border-radius: 10px;
-    background-color: rgb(39, 37, 37);
+    background-color: rgb(9 11 69);
+    box-shadow: 0 1px 1px 3px black;
 }
 
 div.chats {
-    min-height: 65vh;
+    min-height: 69vh;
     padding: 20px;
     overflow-y: auto;
 }
@@ -186,7 +189,7 @@ section.chat_section {
 
 .container1 {
     padding: 19px;
-    background: rgb(78, 75, 75);
+    background: rgb(15 126 255);
     margin: auto;
     flex-direction: row;
     justify-content: flex-start;
@@ -203,7 +206,8 @@ section.chat_section {
 .menu img {
     background: white;
     border-radius: 9px;
-    padding: 7px;
+    width: 36px;
+    padding: 3px;
 }
 
 .brand h1 {
@@ -242,6 +246,8 @@ textarea {
         height: max-content;
         z-index: 11;
         box-shadow: 0 15px 20px -20px black;
+        background: #030131;
+        border-bottom: 3px solid white;
         padding-bottom: 0;
         display: none;
     }
