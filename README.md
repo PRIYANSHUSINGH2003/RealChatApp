@@ -1,3 +1,26 @@
 # Hacker Chat App
 
+To create a hacker chat app using Socket.io and Express, you can follow these general steps:
+
+Set up your development environment: Install Node.js and npm, create a new project directory, and initialize a new npm package.
+
+Install necessary packages: You will need to install the following packages using npm:
+
+express
+socket.io
+Create an Express server: Use Express to create an HTTP server that serves your static files and listens for incoming Socket.io connections.
+
+Set up Socket.io: Initialize Socket.io on your server and listen for incoming connections.
+
+Add Socket.io event handlers: Define Socket.io event handlers for the following events:
+
+"connection": Triggered when a new client connects to the server.
+"disconnect": Triggered when a client disconnects from the server.
+"chat message": Triggered when a client sends a chat message.
+Add client-side code: Create a HTML/CSS/JavaScript interface for your chat app, and include the Socket.io client-side library.
+
+Implement chat functionality: Add JavaScript code to handle user input and send chat messages to the server. Use Socket.io to broadcast messages to all connected clients.
+
+Here's some sample code to get you started
+
 DEMO Website :- https://hackerchat.onrender.com
